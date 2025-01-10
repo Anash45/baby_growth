@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Hachi+Maru+Pop&family=Kavoon&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+.poppins {
+    font-family: "Poppins", serif;
+}
+
+.fredoka {
+    font-family: "Fredoka", serif;
+}
+
+.righteous {
+    font-family: "Righteous", serif;
+}
+
+.kavoon {
+    font-family: "Kavoon", serif;
+}
+
+.mpo {
+    font-family: "Mochiy Pop One", serif;
+}
+
+.hmp {
+    font-family: "Hachi Maru Pop", serif;
+
+}
+
+body {
+    font-family: "Fredoka", serif;
+    color: #1e1e1e;
+    background-color: #FFFFFF;
+}
+
+.btn {
+    padding: 11px 17px;
+    border-radius: 100px;
+}
+
+.btn-login {
+    background-color: #A6D61E;
+    font-size: 20px;
+    color: #FFFFFF;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.hero-img {
+    height: 500px;
+}
+
+.hc-title {
+    font-size: 50px;
+    color: #105659;
+}
+
+.hct-blue {
+    color: #21C5DB;
+}
+
+.hc-desc {
+    font-size: 20px;
+}
+
+.hero {
+    background-image: url(../img/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.ns-box {
+    border-radius: 20px;
+    padding: 80px;
+    height: 500px;
+    width: 575px;
+    max-width: 100%;
+}
+
+.ns-box-parents {
+    background-color: #A6D61E;
+}
+
+.nsb-inp {
+    font-size: 14px;
+    color: #1e1e1e;
+    border-radius: 100px;
+    padding: 20px 30px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.ns-flex {
+    gap: 20px;
+}
+
+.nsb-inp::placeholder {
+    color: #5F5F5F;
+}
+
+.nsb-title {
+    font-size: 35px;
+}
+
+.nsb-desc {
+    font-size: 17px;
+}
+
+.btn-subscribe {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    z-index: 1;
+    transform: translateY(-50%);
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.ns-box-parents .btn-subscribe {
+    background-color: #21C5DB;
+}
+
+.ns-box-doctors {
+    background-color: #21C5DB;
+}
+
+.ns-box-doctors .btn-subscribe {
+    background-color: #A6D61E;
+}
+.js-flex-1{
+    gap: 10px;
+}
+
+.js-title{
+    font-size: 40px;
+    color: #4EA2FF;
+}
+
+.js-desc{
+    font-size: 25px;
+}
+
+.jc-title{
+    font-size: 25px;
+    color: #4EA2FF;
+}
+
+.jc-desc{
+    font-size: 17px;
+    color: #454444;
+}
+
+.js-card{
+    border-radius: 21px;
+    background-color: #FFFFFF;
+    padding: 25px 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.jc-img{
+    aspect-ratio: 31/24;
+    border-radius: 21px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.js-flex-2{
+    gap: 30px;
+}
+
+.features-sec{
+    background-image: url(../img/bg-features.png);
+    background-size: cover;
+    background-position: center;
+}
+.fc-img{
+    aspect-ratio: 37/31;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.fs-flex-1{
+    gap: 28px;
+}
+.fs-card{
+    background-color: #A6D61E;
+    border: 1px solid #105659;
+    border-radius: 22px;
+    overflow: hidden;
+    flex-basis: 375px;
+}
+.fc-bottom{
+    padding: 20px 34px 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.fc-title{
+    font-size: 23px;
+    color: #105659;
+}
+
+.fc-desc{
+    font-size: 20px;
+    color: #000000;
+}
+
+.is-title{
+    font-size: 35px;
+}
+
+.is-desc{
+    font-size: 25px;
+}
+.is-flex-1{
+    gap: 60px;
+}
+
+.is-flex-2{
+    gap: 60px;
+}
+.is-img{
+    height: 500px;
+    width: auto;
+}
+
+.footer-flex-2{
+    gap: 34px;
+}
+
+.footer-title{
+    font-size: 45px;
+    color: #A6D61E;
+}
+.ff-link{
+    font-size: 22px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #105659;
+    padding: 31px 0;
+}
+.footer-border{
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.footer-copy{
+    font-size: 15px;
+}
+.footer-flex-1{
+    gap: 33px;
+}
+@media (max-width: 1200px) {
+    .is-img{
+        height: 400px;
+        width: auto;
+    }
+}
+@media (max-width: 992px) {
+    .hero-img {
+        width: 400px;
+        height: auto;
+    }
+    .js-card{
+        padding: 15px 11px;
+        flex-basis: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo{
+        height: 50px;
+        width: 50px;
+    }
+    footer{
+        padding: 18px;
+    }
+
+    .footer-flex-1{
+        gap: 19px;
+    }
+    .footer-copy{
+        font-size: 13px;
+    }
+    .footer-title{
+        font-size: 26px;
+    }
+    .ff-link{
+        font-size: 13px;
+    }
+
+    .is-title{
+        font-size: 20px;
+    }
+    
+    .is-desc{
+        font-size: 14px;
+    }
+    .is-flex-1{
+        gap: 34px;
+    }
+    
+    .is-flex-2{
+        gap: 34px;
+    }
+    .is-img{
+        height: auto;
+        width: 100%;
+    }
+    .fs-flex-1{
+        gap: 16px;
+    }
+    .fs-card{
+        flex-basis: 220px;
+    }
+    .fc-bottom{
+        gap: 6px;
+        padding: 11px 20px 20px;
+    }
+    
+    .fc-title{
+        font-size: 13px;
+    }
+    
+    .fc-desc{
+        font-size: 11.5px;
+    }
+    .js-flex-1{
+        gap: 5px;
+    }
+    .js-title{
+        font-size: 20px;
+    }
+    
+    .js-desc{
+        font-size: 12px;
+    }
+    
+    main {
+        gap: 80px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+    }
+
+    .btn-login {
+        font-size: 12px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .hc-title {
+        font-size: 28px;
+    }
+
+    .hc-desc {
+        font-size: 12px;
+    }
+
+    .hero-img {
+        width: 250px;
+    }
+
+
+    .nsb-title {
+        font-size: 20px;
+    }
+
+    .ns-box{
+        padding: 40px;
+        min-height: 285px;
+        height: unset;
+    }
+    .nsb-desc {
+        font-size: 10px;
+    }
+
+    .nsb-inp{
+        font-size: 12px;
+        padding: 18px 16px;
+    }
+    .js-card{
+        padding: 15px 11px;
+        flex-basis: 160px;
+    }
+
+    .jc-img{
+        height: 115px;
+    }
+    .jc-title{
+        font-size: 12px;
+    }
+    
+    .jc-desc{
+        font-size: 8px;
+    }
+    .js-flex-2{
+        gap: 14px;
+    }
+    
+}
