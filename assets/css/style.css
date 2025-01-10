@@ -55,7 +55,12 @@ header {
     height: 80px;
     width: 80px;
 }
-
+.hero{
+    min-height: calc(100vh - 128px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .hero-img {
     height: 500px;
 }
@@ -390,8 +395,12 @@ footer{
         font-size: 12px;
     }
 
+    .hero{
+        min-height: calc(100vh - 98px);
+    }
+
     .hero-img {
-        width: 250px;
+        width: 100%;
     }
 
 
