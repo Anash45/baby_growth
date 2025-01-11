@@ -26,6 +26,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Fredoka", serif;
     color: #1e1e1e;
     background-color: #FFFFFF;
@@ -55,12 +56,14 @@ header {
     height: 80px;
     width: 80px;
 }
-.hero{
+
+.hero {
     min-height: calc(100vh - 128px);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .hero-img {
     height: 500px;
 }
@@ -87,7 +90,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 120px;
 }
 
 .ns-box {
@@ -151,30 +154,31 @@ main {
 .ns-box-doctors .btn-subscribe {
     background-color: #A6D61E;
 }
-.js-flex-1{
+
+.js-flex-1 {
     gap: 10px;
 }
 
-.js-title{
+.js-title {
     font-size: 40px;
     color: #4EA2FF;
 }
 
-.js-desc{
+.js-desc {
     font-size: 25px;
 }
 
-.jc-title{
+.jc-title {
     font-size: 25px;
     color: #4EA2FF;
 }
 
-.jc-desc{
+.jc-desc {
     font-size: 17px;
     color: #454444;
 }
 
-.js-card{
+.js-card {
     border-radius: 21px;
     background-color: #FFFFFF;
     padding: 25px 20px;
@@ -187,115 +191,266 @@ main {
     flex-shrink: 0;
 }
 
-.jc-img{
+.jc-img {
     aspect-ratio: 31/24;
     border-radius: 21px;
     object-fit: cover;
     object-position: center;
     width: 100%;
 }
-.js-flex-2{
+
+.js-flex-2 {
     gap: 30px;
 }
 
-.features-sec{
+.features-sec {
     background-image: url(../img/bg-features.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
-.fc-img{
+
+.fc-img {
     aspect-ratio: 37/31;
     object-fit: cover;
     object-position: center;
     width: 100%;
 }
 
-.fs-flex-1{
+.fs-flex-1 {
     gap: 28px;
 }
-.fs-card{
+
+.fs-card {
     background-color: #A6D61E;
     border: 1px solid #105659;
     border-radius: 22px;
     overflow: hidden;
     flex-basis: 375px;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 1);
 }
-.fc-bottom{
+
+.fc-bottom {
     padding: 20px 34px 34px;
     display: flex;
     flex-direction: column;
     gap: 11px;
 }
 
-.fc-title{
+.fc-title {
     font-size: 23px;
     color: #105659;
 }
 
-.fc-desc{
+.fc-desc {
     font-size: 20px;
     color: #000000;
 }
 
-.is-title{
+.is-title {
     font-size: 35px;
 }
 
-.is-desc{
+.is-desc {
     font-size: 25px;
 }
-.is-flex-1{
+
+.is-flex-1 {
     gap: 60px;
 }
 
-.is-flex-2{
+.is-flex-2 {
     gap: 60px;
 }
-.is-img{
+
+.is-img {
     height: 500px;
     width: auto;
 }
 
-.footer-flex-2{
+.footer-flex-2 {
     gap: 34px;
 }
 
-.footer-title{
+.footer-title {
     font-size: 45px;
     color: #A6D61E;
 }
-.ff-link{
+
+.ff-link {
     font-size: 22px;
     text-decoration: none;
 }
 
-footer{
+footer {
     background-color: #105659;
     padding: 31px 0;
+    position: relative;
 }
-.footer-border{
+
+.footer-border {
     height: 1px;
     width: 100%;
     background-color: #FFFFFF;
 }
-.footer-copy{
+
+.footer-copy {
     font-size: 15px;
 }
-.footer-flex-1{
+
+.footer-flex-1 {
     gap: 33px;
 }
+
+.is-ellipse,
+.js-ellipse {
+    position: absolute;
+    z-index: 0;
+    height: 600px;
+}
+
+.ise-1,
+.jse-1 {
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.ise-2,
+.jse-2 {
+    top: 40%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.ise-3,
+.jse-3 {
+    bottom: 0;
+    right: 40%;
+    transform: translateX(50%) translateY(50%);
+}
+
+.doctors-features-sec {
+    background-image: url(../img/dfs-bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+.dfs-card {
+    flex-basis: 400px;
+    box-shadow: 0 0 40px #FFFFFF;
+    border-radius: 36px 36px 32px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dc-img {
+    width: 100%;
+    aspect-ratio: 39/42;
+    object-fit: cover;
+    border-radius: 36px;
+    object-position: center;
+}
+
+.dc-top {
+    z-index: 1;
+    position: relative;
+}
+
+.dc-2 {
+    transform: translateY(60px);
+}
+
+.dc-bottom {
+    flex-grow: 1;
+    z-index: 2;
+    position: relative;
+    padding: 24px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    margin-top: -75px;
+}
+
+.dc-title {
+    font-size: 32px;
+}
+
+.dc-desc {
+    font-size: 18px;
+}
+
+.cs-box {
+    background-image: url(../img/cotact-bg.svg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 23px;
+    padding: 40px 60px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.btn-contact {
+    background-color: #105659 !important;
+    border: 1px solid #105659 !important;
+}
+
+.cb-flex {
+    gap: 30px;
+}
+
+.cb-title {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.cb-flex-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.cbf-group {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 21px;
+}
+
+.cbf-inp {
+    padding: 19px 34px;
+    background-color: #FFFFFF !important;
+    border-radius: 39px;
+    font-size: 17px;
+    line-height: 170%;
+    flex-grow: 1;
+    flex-basis: 300px;
+    border: 1px solid #FFFFFF !important;
+}
+
+@media (max-width: 1400px) {
+    .dc-2 {
+        transform: unset;
+    }
+}
+
 @media (max-width: 1200px) {
-    .is-img{
+    .is-img {
         height: 400px;
         width: auto;
     }
 }
+
 @media (max-width: 992px) {
     .hero-img {
         width: 400px;
         height: auto;
     }
-    .js-card{
+
+    .js-card {
         padding: 15px 11px;
         flex-basis: 250px;
     }
@@ -303,74 +458,141 @@ footer{
 
 @media (max-width: 768px) {
 
-    .logo{
+    .cs-box {
+        padding: 22px 36px;
+    }
+
+    .cb-flex {
+        gap: 18px;
+    }
+
+    .cbf-inp {
+        padding: 10px 20px;
+        font-size: 10px;
+        border-radius: 22px;
+    }
+    
+    .btn-contact{
+        font-size: 10px;
+    }
+
+    .btn-contact svg{
+        height: 12px;
+        width: 12px;
+    }
+    .cb-flex-2,
+    .cbf-group {
+        gap: 11px;
+    }
+
+    .doctors-features-sec {
+        background-image: url(../img/dfs-bg-1.png);
+    }
+
+    .dc-bottom {
+        gap: 11px;
+        padding: 14px 34px;
+    }
+
+    .dc-title {
+        font-size: 18px;
+    }
+
+    .dc-desc {
+        font-size: 10px;
+    }
+
+    .ise-3,
+    .jse-3 {
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%) translateY(60%);
+    }
+
+    .is-ellipse,
+    .js-ellipse {
+        height: 370px;
+    }
+
+    .logo {
         height: 50px;
         width: 50px;
     }
-    footer{
+
+    footer {
         padding: 18px;
     }
 
-    .footer-flex-1{
+    .footer-flex-1 {
         gap: 19px;
     }
-    .footer-copy{
-        font-size: 13px;
-    }
-    .footer-title{
-        font-size: 26px;
-    }
-    .ff-link{
+
+    .footer-copy {
         font-size: 13px;
     }
 
-    .is-title{
+    .footer-title {
+        font-size: 26px;
+    }
+
+    .ff-link {
+        font-size: 13px;
+    }
+
+    .is-title {
         font-size: 20px;
     }
-    
-    .is-desc{
+
+    .is-desc {
         font-size: 14px;
     }
-    .is-flex-1{
+
+    .is-flex-1 {
         gap: 34px;
     }
-    
-    .is-flex-2{
+
+    .is-flex-2 {
         gap: 34px;
     }
-    .is-img{
+
+    .is-img {
         height: auto;
         width: 100%;
     }
-    .fs-flex-1{
+
+    .fs-flex-1 {
         gap: 16px;
     }
-    .fs-card{
-        flex-basis: 220px;
+
+    .fs-card {
+        flex-basis: 320px;
     }
-    .fc-bottom{
+
+    .fc-bottom {
         gap: 6px;
         padding: 11px 20px 20px;
     }
-    
-    .fc-title{
+
+    .fc-title {
         font-size: 13px;
     }
-    
-    .fc-desc{
+
+    .fc-desc {
         font-size: 11.5px;
     }
-    .js-flex-1{
+
+    .js-flex-1 {
         gap: 5px;
     }
-    .js-title{
+
+    .js-title {
         font-size: 20px;
     }
-    
-    .js-desc{
+
+    .js-desc {
         font-size: 12px;
     }
-    
+
     main {
         gap: 80px;
     }
@@ -395,7 +617,7 @@ footer{
         font-size: 12px;
     }
 
-    .hero{
+    .hero {
         min-height: calc(100vh - 98px);
     }
 
@@ -408,36 +630,40 @@ footer{
         font-size: 20px;
     }
 
-    .ns-box{
+    .ns-box {
         padding: 40px;
         min-height: 285px;
         height: unset;
     }
+
     .nsb-desc {
         font-size: 10px;
     }
 
-    .nsb-inp{
+    .nsb-inp {
         font-size: 12px;
         padding: 18px 16px;
     }
-    .js-card{
+
+    .js-card {
         padding: 15px 11px;
-        flex-basis: 160px;
+        flex-basis: 175px;
     }
 
-    .jc-img{
+    .jc-img {
         height: 115px;
     }
-    .jc-title{
+
+    .jc-title {
         font-size: 12px;
     }
-    
-    .jc-desc{
+
+    .jc-desc {
         font-size: 8px;
     }
-    .js-flex-2{
+
+    .js-flex-2 {
         gap: 14px;
     }
-    
+
 }
